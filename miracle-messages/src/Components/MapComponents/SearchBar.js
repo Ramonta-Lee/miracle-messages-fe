@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SearchBarCard from "./SearchBarCard.js";
-import SideBar from "./Sidebar.js";
-import "./SearchBar.scss";
+
 
 // Scrollbar import
 import { Scrollbars } from "react-custom-scrollbars";
 
 const SearchBar = props => {
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
+  //TODO attempt
+  const [searchResults, setSearchResults] = useState([]);
+
+
   const [chapters, setChapters] = useState([
     {
       id: 1,
@@ -33,15 +36,20 @@ const SearchBar = props => {
 
   const handleChange = event => {
     setSearch(event.target.value)
-  }
+  };
 
-  const filterFunction = chapters.filter(chapter =>
-    chapter.city.toLowerCase().includes(search.toLowerCase())
-  )
+  useEffect(() => {
+    const results = chapters.filter(chapter => chapter.city.toLowerCase().includes(search)
+    )
+    setSearchResults(results)
+  }, [search]);
+
+  // const filterFunction = chapters.filter(chapter =>
+  //   chapter.city.toLowerCase().includes(search.toLowerCase())
+  // )
 
   return (
     <>
-      <SideBar className="sidebar-search" />
       <div className="form-div">
         <form className="search-form">
           <input
@@ -54,23 +62,6 @@ const SearchBar = props => {
             className="input"
           />
         </form>
-
-        {/* map here */}
-        <aside>
-          <div className="middle20">
-            <Scrollbars style={{ height: "600px", width: "600px" }}>
-              {filterFunction.map(chapter => {
-                return (
-                  <SearchBarCard
-                    key={chapter.id}
-                    chapter={chapter}
-                    history={props.history}
-                  />
-                )
-              })}
-            </Scrollbars>
-          </div>
-        </aside>
       </div>
     </>
   )
