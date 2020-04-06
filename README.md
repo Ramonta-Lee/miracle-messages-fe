@@ -49,7 +49,7 @@ _Note: When using Create React App, environment variables *must* be prepended wi
   - [x] CSS/Node-sass for some styling on top of styled components
   - [x] Material UI, Reactstrap libraries for styled components
   - [x] Cypress for testing
-  - [x] react-places-autocomplete to integrate with Google Maps for the Volunteer sign up form. (though we didn't finish this part of the project).
+  - [x] react-places-autocomplete to integrate with Google Maps for the Volunteer sign up form. (though we didn't finish this part of the project)
 
 - Backend:
   - [x] Node.js/Express to build the server/endpoints etc.
