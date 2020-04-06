@@ -31,8 +31,9 @@ We believe everyone is somebody's someone, and no one should be defined by what 
 ## 🏠 [View Our Work](https://miracle-message.netlify.com/)
 
 ## Environment
+
 The following environment variables control the front-end:
-*Note: When using Create React App, environment variables _must_ be prepended with `REACT_APP`*
+_Note: When using Create React App, environment variables *must* be prepended with `REACT_APP`_
 
 - REACT_APP_CALLBACK_SSL (Default: true)
   - If true, the authentication callback URL will use https; otherwise the callback url will use http
@@ -48,7 +49,7 @@ The following environment variables control the front-end:
   - [x] CSS/Node-sass for some styling on top of styled components
   - [x] Material UI, Reactstrap libraries for styled components
   - [x] Cypress for testing
-  - [x] react-places-autocomplete to integrate with Google Maps for the Volunteer sign up form. (though we didn't finish this part of the project)
+  - [x] react-places-autocomplete to integrate with Google Maps for the Volunteer sign up form. (though we didn't finish this part of the project).
 
 - Backend:
   - [x] Node.js/Express to build the server/endpoints etc.
