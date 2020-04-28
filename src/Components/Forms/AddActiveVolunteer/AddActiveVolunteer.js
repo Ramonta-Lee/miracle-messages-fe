@@ -14,40 +14,12 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
       height: '100vh'
   },
-    imgContainer: {
-      width: '100%',
-      display: 'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      paddingTop: '20%',
-      alignContent: 'baseline',
-    },
-    imgStyling: {
-      width: '44%',
-    },
     h3Styling: {
       color: '#fff',
       width: '100%',
       textAlign: 'center',
       padding: '0 25%',
       marginTop: '15px',
-    },
-    stepper: {
-      width: '100%',
-      margin: '0 20%',
-      background: 'transparent',
-      color: 'green',
-    },
-    stepperSide: {
-      width: '60%',
-      display: 'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      padding: '11%',
-      [theme.breakpoints.down('sm')]: {
-        width: '100%',
-      },
-     
     },
     buttonContainer: {
       display: 'flex',
@@ -102,7 +74,19 @@ const useStyles = makeStyles((theme) => ({
     },
     formContainer: {
       textAlign: 'center',
-    } 
+      width: '100%',
+      maxWidth: '600px',
+    },
+    pageContainer: {
+        display: 'flex',
+        flexFlow: 'row wrap',
+        justifyContent: 'center',
+        padding: '20px 0px',
+    },
+    title: {
+        width: '100%',
+        textAlign: 'center',
+    }
     
   }));
 
@@ -161,8 +145,8 @@ const AddActiveVolunteer = () => {
 
 
     return (
-        <>
-        <h1>Add Volunteer</h1>
+        <div className={classes.pageContainer}>
+        <h1 className={classes.title}>New Volunteer Sign Up</h1>
         <div className={classes.formContainer} >
           
           <div className='textFieldContainer'>
@@ -195,7 +179,7 @@ const AddActiveVolunteer = () => {
 
           </div>
           </div>
-        </>
+        </div>
     )
 }
 
