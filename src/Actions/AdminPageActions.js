@@ -152,7 +152,7 @@ export const addChapter = chapter => dispatch => {
   dispatch({ type: ADD_CHAPTER_START })
   return axiosWithAuth()
     .post("/chapter", chapter)
-    .thern(res => {
+    .then(res => {
       dispatch({ type: ADD_CHAPTER_SUCCESS, payload: res.chapter.data })
     })
     .catch(err => {
