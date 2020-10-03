@@ -9,7 +9,7 @@ export const addNewPassword = (password, action) => async dispatch => {
     type: POST_NEWPASS_SUCCESS
   })
   axios
-    .put("https://miracle-messages-dev.herokuapp.com/updatePasswordViaEmail")
+    .put("https://miracle-messages2.herokuapp.com/updatePasswordViaEmail")
     // "API from volunteer form" , password
     ()
     .then(response => {
@@ -19,7 +19,7 @@ export const addNewPassword = (password, action) => async dispatch => {
           type: POST_NEWPASS_SUCCESS
         })
       } else {
-        returndispatch({ POST_NEWPASS_FAIL })
+        return dispatch({ POST_NEWPASS_FAIL })
       }
     })
     .catch(error => {

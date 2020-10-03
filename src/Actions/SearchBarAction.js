@@ -13,7 +13,7 @@ export const getChapter = chapters => async dispatch => {
   axios
   //TODO why is this here?
     //.get("localhost:5000/api/chapter", chapters)
-    .get('https://miracle-messages-dev.herokuapp.com', chapters)
+    .get('https://miracle-messages2.herokuapp.com', chapters)
     .then(res => {
       // console.log(res)
       dispatch({

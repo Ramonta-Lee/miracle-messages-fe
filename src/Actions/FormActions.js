@@ -13,7 +13,7 @@ export const addVolunteers = volunteer => async dispatch => {
   axios
 
     .post(
-      "https://miracle-messages-dev.herokuapp.com/api/volunteer/register",
+      "https://miracle-messages2.herokuapp.com/api/volunteer/register",
       volunteer.newVolunteer
     )
     .then(res => {

@@ -17,7 +17,7 @@ const Navbar = props => {
   
     useEffect(() => {
       axios
-        .get("https://miracle-messages-dev.herokuapp.com/api/chapter", chapters)
+        .get("https://miracle-messages2.herokuapp.com/api/chapter", chapters)
         .then(res => {
           updateChapters(res.data);
         })

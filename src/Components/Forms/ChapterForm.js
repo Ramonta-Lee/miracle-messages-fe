@@ -36,7 +36,7 @@ class ChapterForm extends React.Component {
     fd.append("email", this.state.chapter.email)
 
     axios
-      .post("https://miracle-messages-dev.herokuapp.com/api/chapter", fd)
+      .post("https://miracle-messages2.herokuapp.com/api/chapter", fd)
       .then(response => {
         console.log(response)
       })

@@ -34,7 +34,7 @@ class LoginPage extends Component {
     //return this.setState({ error: "" })
 
     axios
-      .post("https://miracle-messages-dev.herokuapp.com/api/volunteer/login", this.state)
+      .post("https://miracle-messages2.herokuapp.com/api/volunteer/login", this.state)
       .then(res => {
         console.log(res);
         localStorage.setItem("token", res.data.token);

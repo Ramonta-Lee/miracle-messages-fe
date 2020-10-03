@@ -10,7 +10,7 @@ export const addEmail = email => async dispatch => {
   })
 
   axios
-    .post("https://miracle-messages-dev.herokuapp.com/forgotPassword")
+    .post("https://miracle-messages2.herokuapp.com/forgotPassword")
     // Back end API goes in here
     .then(res => {
       // console.log("This is the response from AddEmail", res)
