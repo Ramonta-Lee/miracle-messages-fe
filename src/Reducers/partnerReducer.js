@@ -24,7 +24,7 @@ export const partnerReducer = (state = initialState, action) => {
                 fetching: true,
                 error: null
             };
-        case FETCH_PARTNER_SUCCCESS:
+        case FETCH_PARTNER_SUCCESS:
             return {
                 ...state,
                 sponsorData: action.payload,
