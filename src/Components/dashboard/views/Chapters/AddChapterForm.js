@@ -19,29 +19,29 @@ const AddChapterForm = props => {
         newReunionImg: null
       })
 
-  const addDaChaptaaa = e => {
-    e.preventDefault()
+    const addDaChaptaaa = e => {
+        e.preventDefault()
 
-    const id = chapter.id
-    const fd = new FormData()
-    if (chapter.newChapterImg != null) {
-      fd.append("chapter_img", chapter.newChapterImg)
-    }
-    if (chapter.newReunionImg != null) {
-      fd.append("reunion_img", chapter.newReunionImg)
-    }
-    fd.append("title", chapter.title)
-    fd.append("established_date", chapter.established_date)
-    fd.append("description", chapter.description)
-    fd.append("city", chapter.city)
-    fd.append("state", chapter.state)
-    fd.append("email", chapter.email)
-    fd.append("numvolunteers", chapter.numvolunteers)
-    fd.append("msg_delivered", chapter.msg_delivered)
-    fd.append("msg_recorded", chapter.msg_recorded)
-    fd.append("numreunions", chapter.numreunions)
-    fd.append("facebook", chapter.facebook)
-    fd.append("story", chapter.story)
+        const id = chapter.id
+        const fd = new FormData()
+        if (chapter.newChapterImg != null) {
+          fd.append("chapter_img", chapter.newChapterImg)
+        }
+        if (chapter.newReunionImg != null) {
+          fd.append("reunion_img", chapter.newReunionImg)
+        }
+        fd.append("title", chapter.title)
+        fd.append("established_date", chapter.established_date)
+        fd.append("description", chapter.description)
+        fd.append("city", chapter.city)
+        fd.append("state", chapter.state)
+        fd.append("email", chapter.email)
+        fd.append("numvolunteers", chapter.numvolunteers)
+        fd.append("msg_delivered", chapter.msg_delivered)
+        fd.append("msg_recorded", chapter.msg_recorded)
+        fd.append("numreunions", chapter.numreunions)
+        fd.append("facebook", chapter.facebook)
+        fd.append("story", chapter.story)
 
     // axiosWithAuth()
     //   .post(`/api/chapter/`, fd)
