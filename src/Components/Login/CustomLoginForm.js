@@ -10,7 +10,7 @@ const CustomLoginForm = ({ baseUrl }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    const oktaAuth = new OktaAuth({ url: baseUrl, issuer: "https://dev-662389.okta.com/oauth2/default" });
+    const oktaAuth = new OktaAuth({ url: baseUrl, issuer: "https://dev-636641.okta.com/oauth2/default" });
     oktaAuth.signIn({ username, password })
       .then(res => setSessionToken(res.sessionToken))
       .catch(err => console.log('Found an error', err));
