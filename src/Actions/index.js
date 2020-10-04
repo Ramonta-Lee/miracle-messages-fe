@@ -6,7 +6,7 @@ export const FETCH_CHAPTER_FAIL = "FETCH_CHAPTER_FAIL"
 
 
 export const FETCHING_PARTNER = "FETCHING_PARTNER"
-export const FETCH_PARTNER_SUCCCESS = "FETCH_PARTNER_SUCCESS"
+export const FETCH_PARTNER_SUCCESS = "FETCH_PARTNER_SUCCESS"
 export const FETCH_PARTNER_ERR = "FETCH_PARTNER_ERR"
 
 export const DELETE_PARTNER = "DELETE_PARTNER"
@@ -32,7 +32,7 @@ export const getSponsor = data => dispatch => {
   dispatch({ type: FETCHING_PARTNER })
   axiosWithAuth()
     .get("/api/partner")
-    .then(res => dispatch({ type: FETCH_PARTNER_SUCCCESS, payload: res.data }))
+    .then(res => dispatch({ type: FETCH_PARTNER_SUCCESS, payload: res.data }))
     .catch(err =>{
       console.log(err)
       console.log(err.response)
@@ -63,7 +63,7 @@ export const FETCH_CHAPTER_DEFAULT_FAIL = "FETCH_CHAPTER_DEFAULT_FAIL"
 export const getDefault = () => dispatch => {
   dispatch({ type: FETCH_CHAPTER_DEFAULT_INFO })
   axiosWithAuth()
-    .get("/api/chapter/1")
+    .get("/api/chapter")
     .then(res =>
       dispatch({ type: FETCH_CHAPTER_DEFAULT_SUCCESS, payload: res.data })
     )
