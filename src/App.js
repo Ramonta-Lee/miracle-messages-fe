@@ -21,7 +21,7 @@ import SearchBar from "./Components/MapComponents/SearchBar.js";
 import NewVolunteer from "./Components/Forms/onboarding/NewVolunteer";
 import ChapterPage from "./Components/ChapterPage/ChapterPage";
 
-//Octa Import
+//Okta Import
 
 import { Security, SecureRoute, LoginCallback } from "@okta/okta-react";
 import config from "./config/config.js";
@@ -48,7 +48,7 @@ const App = () => {
   return (
     <div className="App">
       <Security
-        issuer="https://dev-662389.okta.com/oauth2/default"
+        issuer="https://dev-636641.okta.com/oauth2/default"
         clientId="0oa4sulf3qW8OTVdF4x6"
         redirectUri={window.location.origin + "/implicit/callback"}
         onAuthRequired={onAuthRequired}
