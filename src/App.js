@@ -31,7 +31,7 @@ import { PrivateRoute } from "./Components/PrivateRoute";
 // const config = {
 //   issuer: `https://donyawebgroup-us.okta.com/oauth2/default`,
 //   redirectUri: window.location.origin + `/implicit/callback`,
-//   clientId: `0oa4sd1nfAm7D5kIA4x6`,
+//   clientId: `0oa149ogu8i4NK7sq4x7`,
 //   pkce: true
 // };
 
@@ -49,7 +49,7 @@ const App = () => {
     <div className="App">
       <Security
         issuer="https://dev-636641.okta.com/oauth2/default"
-        clientId="0oa4sulf3qW8OTVdF4x6"
+        clientId="0oa149ogu8i4NK7sq4x7"
         redirectUri={window.location.origin + "/implicit/callback"}
         onAuthRequired={onAuthRequired}
         pkce={true}

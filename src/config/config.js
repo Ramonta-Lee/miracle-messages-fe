@@ -1,4 +1,4 @@
-const CLIENT_ID = process.env.REACT_APP_CLIENT_ID || '0oa4z3i22O2AsShIr4x6';
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID || "0oa149ogu8i4NK7sq4x7";
 const ISSUER = process.env.REACT_APP_ISSUER || 'https://dev-636641.okta.com/oauth2/default';
 
 // The callback path always goes to the same route
